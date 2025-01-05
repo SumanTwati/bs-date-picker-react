@@ -1,6 +1,6 @@
 # BSDatePicker - Nepali & Gregorian Date Picker
 
-**Version:** 1.0.0  
+**Version:** 0.1.3  
 **Release Date:** January 5, 2025
 
 ## Overview
@@ -33,6 +33,8 @@ The BSDatePicker is a robust and user-friendly date picker component supporting 
 - **Callback Integration**:  
   Provides selected dates in both calendar formats using an `onDateChange` callback.
 
+---
+
 ## Installation
 
 Install the package using npm:
@@ -41,17 +43,23 @@ Install the package using npm:
 npm install bs-datepicker
 ```
 
+---
+
 ## Usage
 
 Import and implement the BSDatePicker in your project:
 
+### Basic Example
+
+```tsx
 import { BSDatePicker } from "bs-datepicker";
 
 <BSDatePicker
-language="np"
-format="YYYY-MM-DD"
-onDateChange={(date) => console.log(date)}
+  language="np"
+  format="YYYY-MM-DD"
+  onDateChange={(date) => console.log(date)}
 />;
+```
 
 ### Props
 
@@ -62,9 +70,37 @@ onDateChange={(date) => console.log(date)}
 | `language`     | String   | `'en'`         | Language for the calendar (`np` for Nepali, `en` for English). |
 | `format`       | String   | `'YYYY-MM-DD'` | Date format.                                                   |
 
+---
+
+## Development Notes
+
+### Dependencies
+
+- **`nepali-date-converter`**: Used to handle date conversions between Nepali and Gregorian calendars.
+- **`@radix-ui/react-popover`**: Manages the popover dropdown for the calendar UI.
+- **`lucide-react`**: Provides the calendar icon.
+
+### Style and Responsiveness
+
+- The component uses a responsive and accessible design.
+- Styling is implemented with utility classes (e.g., Tailwind CSS). Ensure the proper setup of Tailwind or adapt the styles for your project.
+
+### Localization
+
+- Customize day and month names through the `MONTH_NAMES` and `DAY_NAMES` constants.
+- Use `toNepaliNumeral` Convert numbers to Nepali numerals when necessary.
+
+---
+
+## Known Limitations
+
+- Events like key navigation for accessibility are not implemented but can be added in future versions.
+
+---
+
 ## Release Notes
 
-### Version 0.1.2
+### Version 0.1.3
 
 - Initial release of the BSDatePicker component.
 - Fully functional support for Nepali and Gregorian calendars.
@@ -72,11 +108,27 @@ onDateChange={(date) => console.log(date)}
 - Customizable date formats and styling.
 - Input validation and date range checks.
 
+---
+
 ## Roadmap
 
 - **Range Selection**: Add support for selecting date ranges.
 - **Accessibility Improvements**: Enhanced support for screen readers.
 - **Custom Themes**: Provide more options for UI customization.
+
+---
+
+## Contribution
+
+We welcome contributions! If you'd like to improve the component, please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
+
+---
 
 ## Support
 
@@ -87,3 +139,11 @@ If you encounter any issues or have suggestions, please reach out to us:
 Thank you for choosing **BSDatePicker**! 🎉
 
 Let me know if you'd like further edits or additions!
+
+---
+
+## License
+
+This component is licensed under the **GPL-3.0 License**. See the LICENSE file for details.
+
+---
