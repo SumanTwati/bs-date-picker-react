@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+Here’s the complete `README.md` for your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+````markdown
+# BSDatePicker - Nepali & Gregorian Date Picker
 
-## Available Scripts
+**Version:** 1.0.0  
+**Release Date:** January 5, 2025
 
-In the project directory, you can run:
+## Overview
 
-### `yarn start`
+The BSDatePicker is a robust and user-friendly date picker component supporting both the Nepali (Bikram Sambat) and Gregorian (AD) calendar systems. It offers seamless integration for developers looking to implement dual-language date selection in their applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Dual Calendar Support**:  
+  Switch effortlessly between Nepali (BS) and Gregorian (AD) calendars.
 
-### `yarn test`
+- **Customizable Date Formats**:  
+  Supports popular formats such as `YYYY/MM/DD`, `DD/MM/YYYY`, and `MMMM DD, YYYY`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Dynamic Calendar Display**:
 
-### `yarn build`
+  - Automatic adjustments for months and years across both calendars.
+  - Cross-calendar date mapping with highlighted selections.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Internationalization**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Nepali numerals for BS dates.
+  - English numerals for Gregorian dates.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Interactive UI**:
 
-### `yarn eject`
+  - Modern popover-based date picker interface.
+  - Responsive design with easy navigation.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Callback Integration**:  
+  Provides selected dates in both calendar formats using an `onDateChange` callback.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Install the package using npm:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm install bs-datepicker
+```
+````
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Import and implement the BSDatePicker in your project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```typescript
+import { BSDatePicker } from "bs-datepicker";
+
+<BSDatePicker
+  language="np"
+  format="YYYY-MM-DD"
+  onDateChange={(date) => console.log(date)}
+/>;
+```
+
+### Props
+
+| Prop           | Type     | Default        | Description                                                    |
+| -------------- | -------- | -------------- | -------------------------------------------------------------- |
+| `onDateChange` | Function | `undefined`    | Callback providing the selected date in both formats.          |
+| `defaultValue` | String   | `undefined`    | Initial date value (BS or Gregorian format).                   |
+| `language`     | String   | `'en'`         | Language for the calendar (`np` for Nepali, `en` for English). |
+| `format`       | String   | `'YYYY-MM-DD'` | Date format.                                                   |
+
+## Release Notes
+
+### Version 1.0.0
+
+- Initial release of the BSDatePicker component.
+- Fully functional support for Nepali and Gregorian calendars.
+- Cross-calendar dynamic month/year navigation.
+- Customizable date formats and styling.
+- Input validation and date range checks.
+
+## Roadmap
+
+- **Range Selection**: Add support for selecting date ranges.
+- **Accessibility Improvements**: Enhanced support for screen readers.
+- **Custom Themes**: Provide more options for UI customization.
+
+## Support
+
+If you encounter any issues or have suggestions, please reach out to us:
+
+- **Email**: support@bsdatepicker.com
+- **GitHub**: [https://github.com/bs-datepicker](https://github.com/bs-datepicker)
+
+---
+
+Thank you for choosing **BSDatePicker**! 🎉
+
+```
+
+Let me know if you'd like further edits or additions!
+```
