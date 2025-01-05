@@ -41,21 +41,17 @@ Install the package using npm:
 npm install bs-datepicker
 ```
 
-````
-
 ## Usage
 
 Import and implement the BSDatePicker in your project:
 
-```typescript
 import { BSDatePicker } from "bs-datepicker";
 
 <BSDatePicker
-  language="np"
-  format="YYYY-MM-DD"
-  onDateChange={(date) => console.log(date)}
+language="np"
+format="YYYY-MM-DD"
+onDateChange={(date) => console.log(date)}
 />;
-```
 
 ### Props
 
@@ -88,12 +84,6 @@ If you encounter any issues or have suggestions, please reach out to us:
 
 - **Email**: twatisuman@gmail.com
 
----
-
 Thank you for choosing **BSDatePicker**! 🎉
 
-```
-
 Let me know if you'd like further edits or additions!
-```
-````
