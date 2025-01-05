@@ -1,6 +1,3 @@
-Here’s the complete `README.md` for your project:
-
-````markdown
 # BSDatePicker - Nepali & Gregorian Date Picker
 
 **Version:** 1.0.0  
@@ -43,6 +40,7 @@ Install the package using npm:
 ```bash
 npm install bs-datepicker
 ```
+
 ````
 
 ## Usage
@@ -88,8 +86,7 @@ import { BSDatePicker } from "bs-datepicker";
 
 If you encounter any issues or have suggestions, please reach out to us:
 
-- **Email**: support@bsdatepicker.com
-- **GitHub**: [https://github.com/bs-datepicker](https://github.com/bs-datepicker)
+- **Email**: twatisuman@gmail.com
 
 ---
 
@@ -99,3 +96,4 @@ Thank you for choosing **BSDatePicker**! 🎉
 
 Let me know if you'd like further edits or additions!
 ```
+````

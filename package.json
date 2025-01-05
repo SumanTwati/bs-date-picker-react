@@ -1,6 +1,6 @@
 {
   "name": "bs-date-picker-react",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "dependencies": {
     "@radix-ui/react-popover": "^1.1.4",
@@ -41,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumanTwati/bs-date-picker-react.git"
   }
 }
