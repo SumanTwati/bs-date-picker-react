@@ -68,7 +68,7 @@ import { BSDatePicker } from "bs-datepicker";
 
 ## Release Notes
 
-### Version 1.0.0
+### Version 0.1.2
 
 - Initial release of the BSDatePicker component.
 - Fully functional support for Nepali and Gregorian calendars.
