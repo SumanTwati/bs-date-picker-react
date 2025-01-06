@@ -13,7 +13,7 @@ The BSDatePicker is a robust and user-friendly date picker component supporting 
   Switch effortlessly between Nepali (BS) and Gregorian (AD) calendars.
 
 - **Customizable Date Formats**:  
-  Supports popular formats such as `YYYY/MM/DD`, `DD/MM/YYYY`, and `MMMM DD, YYYY`.
+  Supports popular formats such as `YYYY/MM/DD`, `DD/MM/YYYY`, `MMMM DD, YYYY` and other.
 
 - **Dynamic Calendar Display**:
 
@@ -40,7 +40,12 @@ The BSDatePicker is a robust and user-friendly date picker component supporting 
 Install the package using npm:
 
 ```bash
-npm install bs-datepicker
+npm install bs-date-picker-react
+
+or
+
+yarn add bs-date-picker-react
+
 ```
 
 ---
@@ -52,7 +57,7 @@ Import and implement the BSDatePicker in your project:
 ### Basic Example
 
 ```tsx
-import { BSDatePicker } from "bs-datepicker";
+import { BSDatePicker } from "bs-date-picker-react";
 
 <BSDatePicker
   language="np"
