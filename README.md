@@ -1,8 +1,5 @@
 # BSDatePicker - Nepali & Gregorian Date Picker
 
-**Version:** 0.1.3  
-**Release Date:** January 5, 2025
-
 ## Overview
 
 The BSDatePicker is a robust and user-friendly date picker component supporting both the Nepali (Bikram Sambat) and Gregorian (AD) calendar systems. It offers seamless integration for developers looking to implement dual-language date selection in their applications.
@@ -57,6 +54,7 @@ Import and implement the BSDatePicker in your project:
 ### Basic Example
 
 ```tsx
+import "bs-date-picker-react/dist/style.css";
 import { BSDatePicker } from "bs-date-picker-react";
 
 <BSDatePicker

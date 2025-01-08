@@ -54,6 +54,7 @@ import {
 import { CalendarIcon } from "lucide-react";
 import NepaliDate from "nepali-date-converter";
 import { useState } from "react";
+import "./index.css";
 
 export type DateFormat =
   | "YYYY/MM/DD"
