@@ -1,6 +1,6 @@
 {
   "name": "bs-date-picker-react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A customizable Nepali date picker for React supporting English and Nepali languages.",
   "module": "dist/bs-date-picker.es.js",
   "types": "dist/index.d.ts",
