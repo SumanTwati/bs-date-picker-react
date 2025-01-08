@@ -1,18 +1,26 @@
 {
   "name": "bs-date-picker-react",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "description": "A customizable Nepali date picker for React supporting English and Nepali languages.",
+  "main": "dist/bs-date-picker.umd.js",
+  "types": "dist/index.d.ts",
   "private": false,
   "license": "GPL-3.0",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumanTwati/bs-date-picker-react.git"
   },
+  "homepage": "https://github.com/SumanTwati/bs-date-picker-react#readme",
+  "keywords": [
+    "react",
+    "nepali-date-picker",
+    "date-picker",
+    "react-component",
+    "bs-date-picker",
+    "calendar",
+    "nepali-calendar",
+    "date-converter"
+  ],
   "dependencies": {
     "@radix-ui/react-popover": "^1.1.4",
     "@types/jest": "^27.0.1",
@@ -27,25 +35,35 @@
     "react-scripts": "5.0.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
-    "typescript": "^4.4.2"
+    "vite-plugin-dts": "^4.4.0"
   },
   "devDependencies": {
-    "typescript": "^4.4.2"
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0"
   },
   "peerDependencies": {
-    "react": "^19.0.0"
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "vite build",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepare": "npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/SumanTwati/bs-date-picker-react/issues"
   },
   "browserslist": {
     "production": [
@@ -58,9 +76,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SumanTwati/bs-date-picker-react.git"
   }
 }
