@@ -529,7 +529,7 @@ export function BSDatePicker({
               </div>
             </div>
             {/* Days Grid */}
-            <div className="grid grid-cols-7 gap-1 text-black">
+            <div className="grid grid-cols-7 gap-1 text-black p-4">
               {/* Day Names */}
               {DAY_NAMES[language].map((day) => (
                 <div key={day} className="text-center text-xs font-medium p-1">
