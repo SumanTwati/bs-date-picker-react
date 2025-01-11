@@ -103,13 +103,22 @@ import { BSDatePicker } from "bs-date-picker-react";
 
 ## Release Notes
 
-### Version 0.1.3
+### Version 1.1.0
 
 - Initial release of the BSDatePicker component.
 - Fully functional support for Nepali and Gregorian calendars.
 - Cross-calendar dynamic month/year navigation.
 - Customizable date formats and styling.
 - Input validation and date range checks.
+
+### Version 1.1.1
+
+- Minor Bug fixes
+
+### Version 1.1.2
+
+- Enhance BSDatePicker styling and positioning for better usability
+- Padding bug fix for popover contents
 
 ---
 
