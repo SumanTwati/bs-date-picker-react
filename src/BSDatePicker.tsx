@@ -457,7 +457,14 @@ export function BSDatePicker({
             <CalendarIcon className="absolute right-2 top-2.5 h-4 w-4 opacity-50" />
           </div>
         </PopoverTrigger>
-        <PopoverContent className="w-auto p-0" align="start">
+        <PopoverContent
+          className="w-auto p-0"
+          align="start"
+          sideOffset={4} // Adjusts vertical/horizontal offset
+          style={{
+            zIndex: 9999,
+          }}
+        >
           <div
             style={{ backgroundColor: "var(--secondary-color)" }}
             className="mt-1 p-2 bg-white rounded-md"
@@ -529,7 +536,7 @@ export function BSDatePicker({
               </div>
             </div>
             {/* Days Grid */}
-            <div className="grid grid-cols-7 gap-1 text-black">
+            <div className="grid grid-cols-7 gap-1 text-black p-3">
               {/* Day Names */}
               {DAY_NAMES[language].map((day) => (
                 <div key={day} className="text-center text-xs font-medium p-1">
@@ -594,7 +601,7 @@ export function BSDatePicker({
                     className={cn(
                       "h-8 w-8 rounded hover:bg-gray-100 text-sm relative",
                       selectedDate?.getDate() === day &&
-                        "rounded bg-[#00b341] text-white hover:bg-[#00b341]"
+                        "rounded bg-[var(--primary-color)] text-white hover:bg-[var(--primary-color)]"
                     )}
                     onClick={() => handleDateSelect(day)}
                   >
