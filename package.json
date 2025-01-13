@@ -1,8 +1,8 @@
 {
-  "name": "bs-calendar-react",
-  "version": "1.2.0",
+  "name": "bs-date-picker-react",
+  "version": "1.1.6",
   "description": "A customizable Nepali date picker for React supporting English and Nepali languages.",
-  "module": "dist/bs-calendar-react.es.js",
+  "module": "dist/bs-date-picker.es.js",
   "types": "dist/index.d.ts",
   "private": false,
   "license": "GPL-3.0",
@@ -27,7 +27,6 @@
     "@types/node": "18.15.11",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
-    "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "nepali-date-converter": "^3.3.2",
     "primeflex": "^3.3.1",
@@ -38,7 +37,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
-    "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "nepali-date-converter": "^3.3.2",
     "react": "18.2.0",
