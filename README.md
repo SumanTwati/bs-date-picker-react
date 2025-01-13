@@ -120,6 +120,14 @@ import { BSDatePicker } from "bs-date-picker-react";
 - Enhance BSDatePicker styling and positioning for better usability
 - Padding bug fix for popover contents
 
+### Version 1.1.3/1.1.4
+
+- Date number css alignment fixes
+
+### Version 1.1.5
+
+- Dynamic background respect to theme
+
 ---
 
 ## Roadmap

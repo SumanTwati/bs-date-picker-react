@@ -467,7 +467,7 @@ export function BSDatePicker({
         >
           <div
             style={{ backgroundColor: "var(--secondary-color)" }}
-            className="mt-1 p-2 bg-white rounded-md"
+            className="mt-1 p-2 rounded-md bg-white"
           >
             {/* Month and Year Header */}
             <div
@@ -536,7 +536,7 @@ export function BSDatePicker({
               </div>
             </div>
             {/* Days Grid */}
-            <div className="grid grid-cols-7 gap-1 text-black p-3">
+            <div className="grid grid-cols-7 gap-2 text-black pl-3">
               {/* Day Names */}
               {DAY_NAMES[language].map((day) => (
                 <div key={day} className="text-center text-xs font-medium p-1">
@@ -607,19 +607,39 @@ export function BSDatePicker({
                   >
                     {language === "np" ? (
                       <>
-                        <span className="absolute top-0 right-4 text-[10px]">
+                        <span
+                          className={`absolute top-0 ${
+                            day.toString().length === 1 ? "right-3" : "right-2"
+                          } text-[10px]`}
+                        >
                           {toNepaliNumeral(day)}
                         </span>
-                        <span className="absolute bottom-0 right-1 text-[8px] text-gray-600">
+                        <span
+                          className={`absolute bottom-0 ${
+                            usDate.getDate().toString().length === 1
+                              ? "right-1"
+                              : "right-0"
+                          }  text-[8px] text-gray-600`}
+                        >
                           {usDate.getDate()}
                         </span>
                       </>
                     ) : (
                       <>
-                        <span className="absolute top-0 right-4 text-[10px]">
+                        <span
+                          className={`absolute top-0 ${
+                            day.toString().length === 1 ? "right-3" : "right-2"
+                          } text-[10px]`}
+                        >
                           {day}
                         </span>
-                        <span className="absolute bottom-0 right-1 text-[8px] text-gray-600">
+                        <span
+                          className={`absolute bottom-0 ${
+                            nepaliDate.getDate().toString().length === 1
+                              ? "right-1"
+                              : "right-0"
+                          }  text-[8px] text-gray-600`}
+                        >
                           {toNepaliNumeral(nepaliDate.getDate())}
                         </span>
                       </>
